@@ -4,11 +4,12 @@ class Main < Device
   def self.call
     puts "Hello CloudWalk!"
     getc
+    Device::Network.socket
+    http = SimpleHttp.new("http", "http-echo.cloudwalk.io")
+    http.socket = Device::Network.socket.call
+    response = http.request("GET", "/", {"Body" => "TESSST"})
+    puts response.body
     true
-  end
-
-  def self.foo
-    :foo
   end
 
   def self.version

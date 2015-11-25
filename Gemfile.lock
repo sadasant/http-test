@@ -9,7 +9,7 @@ GIT
       yard (~> 0.8)
 
 GIT
-  remote: https://github.com/scalone/walk-simplehttp-poc.git
+  remote: https://github.com/cloudwalkio/simplehttp.git
   revision: 5b1e7813e9b5653d3005f799a1a4bd3871596dd9
   specs:
     simplehttp (0.4.1)

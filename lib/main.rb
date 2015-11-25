@@ -9,7 +9,7 @@ class Main < Device
     http = SimpleHttp.new("http", "http-echo.cloudwalk.io")
     http.socket = Device::Network.socket.call
     puts http.socket
-    puts response = http.request("POST", "/", {"Body" => "TESSST"})
+    puts response = http.request("POST", "/", {"Body" => "TEST"})
     puts "Body #{response.body}"
     puts "Code #{response.code}"
     getc

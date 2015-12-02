@@ -3,7 +3,7 @@ class IntegrationHttpTestTest < DaFunk::Test.case
     Device::System.klass = "http-test"
     response = HttpTest.perform
     assert_equal 200, response.code
-    assert_equal "CLOUDWALK", response.body
+    assert_equal "CLOUDWALK ", response.body
   end
 end
 

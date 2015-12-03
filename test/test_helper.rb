@@ -10,6 +10,3 @@ DaFunk::Test.configure do |t|
   t.serial         = "0000000003"
 end
 
-Device::Setting.to_staging!
-Device::System.klass = "http-test"
-

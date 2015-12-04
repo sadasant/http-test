@@ -2,8 +2,9 @@ require 'simplehttp'
 
 class Main < Device
   def self.call
+    Device::Display.clear
     puts "HTTP Post test!"
-    puts "Press to perform HTTP request"
+    puts "Press to start ..."
     getc
     response = HttpTest.perform
     puts "Body #{response.body}"

@@ -6,6 +6,7 @@ class Main < Device
     puts "HTTP Post test!"
     puts "Press to start ..."
     getc
+    puts "Connecting ..."
     response = HttpTest.perform
     puts "Body #{response.body}"
     puts "Code #{response.code}"

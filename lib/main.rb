@@ -3,7 +3,7 @@ require 'simplehttp'
 class Main < Device
   def self.call
     Device::Display.clear
-    puts "HTTP Post test!"
+    puts "1HTTP Post test!"
     puts "Press to start ..."
     getc
     puts "Connecting ..."
